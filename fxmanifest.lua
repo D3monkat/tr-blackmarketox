@@ -12,7 +12,7 @@ client_scripts {
     'client.lua'
 }
 
-shared_scripts {'Config.lua'}
+shared_scripts {'Config.lua', '@ox_lib/init.lua'}
 
 dependencies {
     'qb-menu',
