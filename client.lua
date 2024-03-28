@@ -56,12 +56,12 @@ end)
 -- First Shop| This is where you customize which shops get opened by this ped. |Default Weapons|
 RegisterNetEvent('tr-blackmarket:OpenShop', function()
     local BlackMarket = {
-        { header = Config.Text['PedHeader'], isMenuHeader = true, icon = Config.Icons["Header"] },
-        { header = Config.Text['Pistols'], icon = Config.Icons['Pistol'], params = { event = "tr-blackmarket:PistolShop" } },
-        { header = Config.Text['SubMachineGuns'], icon = Config.Icons['SubMachineGuns'], params = { event = "tr-blackmarket:SubMachineGunsShop" } },
-        { header = Config.Text['Shotguns'], icon = Config.Icons['Shotguns'], params = { event = "tr-blackmarket:ShotGunsShop" } },
-        { header = Config.Text['AssaultWeapons'], icon = Config.Icons['AssaultWeapons'], params = { event = "tr-blackmarket:AssaultWeaponsShop" } },
-        { header = Config.Text['Miscellanceous'], icon = Config.Icons['Miscellanceous'], params = { event = "tr-blackmarket:MiscellanceousShop" } }
+        { header = Lang:t('PedHeader'), isMenuHeader = true, icon = Config.Icons["Header"] },
+        { header = Lang:t('Pistols'), icon = Config.Icons['Pistol'], params = { event = "tr-blackmarket:PistolShop" } },
+        { header = Lang:t('SubMachineGuns'), icon = Config.Icons['SubMachineGuns'], params = { event = "tr-blackmarket:SubMachineGunsShop" } },
+        { header = Lang:t('Shotguns'), icon = Config.Icons['Shotguns'], params = { event = "tr-blackmarket:ShotGunsShop" } },
+        { header = Lang:t('AssaultWeapons'), icon = Config.Icons['AssaultWeapons'], params = { event = "tr-blackmarket:AssaultWeaponsShop" } },
+        { header = Lang:t('Miscellanceous'), icon = Config.Icons['Miscellanceous'], params = { event = "tr-blackmarket:MiscellanceousShop" } }
     }
     exports['qb-menu']:openMenu(BlackMarket)
 end)
@@ -69,8 +69,8 @@ end)
 -- Second Shop| This is where you customize which shops get opened by this ped. |Default Heist Supplies|
 RegisterNetEvent('tr-blackmarket:OpenShop2', function()
     local HeistSeller = {
-        { header = Config.Text['PedHeader'], isMenuHeader = true, icon = Config.Icons["Header"] },
-        { header = Config.Text['HeistSeller'], icon = Config.Icons['HeistSeller'], params = { event = "tr-blackmarket:HeistSeller" } }
+        { header = Lang:t('PedHeader'), isMenuHeader = true, icon = Config.Icons["Header"] },
+        { header = Lang:t('HeistSeller'), icon = Config.Icons['HeistSeller'], params = { event = "tr-blackmarket:HeistSeller" } }
     }
     exports['qb-menu']:openMenu(HeistSeller)
 end)
@@ -78,8 +78,8 @@ end)
 -- Third Shop| This is where you customize which shops get opened by this ped. |Default Low Tier Supplies|
 RegisterNetEvent('tr-blackmarket:OpenShop3', function()
     local CriminalShop = {
-        { header = Config.Text['PedHeader'], isMenuHeader = true, icon = Config.Icons["Header"] },
-        { header = Config.Text['CriminalShop'], icon = Config.Icons['CriminalShop'], params = { event = "tr-blackmarket:CriminalShop" } }
+        { header = Lang:t('PedHeader'), isMenuHeader = true, icon = Config.Icons["Header"] },
+        { header = Lang:t('CriminalShop'), icon = Config.Icons['CriminalShop'], params = { event = "tr-blackmarket:CriminalShop" } }
     }
     exports['qb-menu']:openMenu(CriminalShop)
 end)
