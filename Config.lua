@@ -1,5 +1,7 @@
 Config = {}
 
+Config.inventory = "ox" -- supported: OX and QB
+
 Config.Blips = {
     -- Weapons Dealer
     {title = 'Suspicious Dealer', colour = 59, id = 303, coords = vector3(-33.28, -614.28, 35.08), scale = 0.6, useblip = true},

@@ -88,7 +88,12 @@ end)
 
 -- BlackMarket Shop Events
 RegisterNetEvent("tr-blackmarket:PistolShop", function()
-    TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.PistolShop)
+    if Config.Inventory == "qb" then
+        TriggerServerEvent("inventory:server:OpenInventory", "shop", "market", Config.PistolShop)
+        TriggerEvent("inventory:client:SetCurrentStash", stash)
+    elseif Config.Inventory == "ox" then
+        exports.ox_inventory:openInventory('shop', { type = 'pistolshopbm', id = 1 })
+    end
 end)
 
 RegisterNetEvent("tr-blackmarket:SubMachineGunsShop", function()
